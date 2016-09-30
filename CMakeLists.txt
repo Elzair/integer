@@ -8,3 +8,5 @@ target_include_directories(boost_integer BEFORE INTERFACE ${CMAKE_CURRENT_SOURCE
 
 install(TARGETS boost_integer DESTINATION lib)
 install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/include/boost DESTINATION include)
+
+add_library(boost::integer ALIAS boost_integer)
